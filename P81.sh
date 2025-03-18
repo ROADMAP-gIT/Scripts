@@ -6,4 +6,5 @@ else
 	downloadURL="https://static.perimeter81.com/agents/mac/$pkgURL"
 	curl -L -o /Users/Shared/HarmonySase.pkg $downloadURL 
 	sudo installer -pkg /Users/Shared/HarmonySase.pkg -target /
+fi
 exit 0
