@@ -1,5 +1,4 @@
 #!/bin/zsh
-
 if [ -d /Applications/Perimeter\ 81.app ]; 
 	then echo "Perimeter 81 already Installed, exiting!"
 else
