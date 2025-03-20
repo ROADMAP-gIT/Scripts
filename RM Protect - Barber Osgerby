@@ -1,6 +1,6 @@
 !/bin/bash
-jumpCloudAPIKey=""
-triggerName="myTriggerName"
+jumpCloudAPIKey="jca_3Jzvvk58Tq7utA9eJ9okpcnf9cCixZDpfpno"
+triggerName="RMProtect"
 curl --silent \
 -X 'POST' \
 -H "x-api-key: ${jumpCloudAPIKey}" \
