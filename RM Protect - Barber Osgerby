@@ -1,0 +1,15 @@
+!/bin/bash
+jumpCloudAPIKey=""
+triggerName="myTriggerName"
+curl --silent \
+-X 'POST' \
+-H "x-api-key: ${jumpCloudAPIKey}" \
+"https://console.jumpcloud.com/api/command/trigger/${triggerName}"
+PS /PowerShell>
+$APIkey = 'jumpCloudAPIKey'
+$triggerName = 'myTriggerName'
+$TriggerURL = "https://console.jumpcloud.com/api/command/trigger/$triggerName"
+$hdrs = @{}
+$hdrs.Add("Accept","application/json")
+$hdrs.Add("X-API-KEY","$APIkey")
+Invoke-RestMethod -Method POST -Uri $TriggerURL -Header $hdrs
